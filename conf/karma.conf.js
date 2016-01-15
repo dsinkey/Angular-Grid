@@ -3,10 +3,7 @@ module.exports = function (config) {
         basePath: '../',
         files: [
             'src/bower_components/jquery/jquery.js',
-            'src/bower_components/fullcalendar/fullcalendar.js',
-            'src/bower_components/momentjs/moment.js',
             'src/bower_components/angular/angular.js',
-            'src/bower_components/angular-ui-calendar/src/calendar.js',
             'src/bower_components/angular-mocks/angular-mocks.js',
             'src/js/app.js',
             'src/js/controllers.js',
