@@ -3,15 +3,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
-    <title>Angular UI Calendar</title>
+    <title>Angular UI NG-Grid</title>
     <link rel="stylesheet" href="css/main.css">
-    <!--(if target dev)><!-->
-    <link rel="stylesheet" href="bower_components/fullcalendar/fullcalendar.css">
-    <!--<!(endif)-->
-    <!--(if target dist)>
-    <link rel="stylesheet" href="css/fullcalendar.css">
-    <!(endif)-->
+    <link rel="stylesheet" href="bower_components/ng-grid/ng-grid.css">
 </head>
+
 <body ng-app="myApp">
 <div ng-controller="NgGridCtrl">
     <div class="gridStyle" ng-grid="gridOptions"></div>
@@ -20,13 +16,11 @@
 
 <!--(if target dev)><!-->
 <script src="bower_components/jquery/jquery.js"></script>
-<script src="bower_components/jquery-ui/jquery-ui.js"></script>
-<script src="bower_components/momentjs/moment.js"></script>
 <script src="bower_components/angular/angular.js"></script>
-<script src="bower_components/ng-grid/ng-grid-2.0.7.min.js"></script>
+<script src="bower_components/ng-grid/ng-grid-2.0.7.debug.js"></script>
 <script src="js/app.js"></script>
-<script src="js/controllers.js"></script>
 <script src="js/services.js"></script>
+<script src="js/controllers.js"></script>
 <script src="js/filters.js"></script>
 <!--<!(endif)-->
 <!--(if target dist)>
