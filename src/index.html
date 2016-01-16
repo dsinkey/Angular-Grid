@@ -13,26 +13,20 @@
     <!(endif)-->
 </head>
 <body ng-app="myApp">
-
-<div ng-controller="CalCtrl">
-    <div ui-calendar="uiConfig.calendar" ng-model="eventSources"></div>
-    <div class="cal-entry" ng-repeat="event in events">
-        <div class="delete" ng-click="remove()">X</div>
-        <div>{{ event.start | moment }}</div>
-        <div>{{ event | duration }}</div>
-        <input ng-model="event.title" />
-    </div>
+<div ng-controller="NgGridCtrl">
+    <div class="gridStyle" ng-grid="gridOptions"></div>
 </div>
+
 
 <!--(if target dev)><!-->
 <script src="bower_components/jquery/jquery.js"></script>
-<script src="bower_components/jquery-ui/ui/jquery-ui.js"></script>
-<script src="bower_components/fullcalendar/fullcalendar.js"></script>
+<script src="bower_components/jquery-ui/jquery-ui.js"></script>
 <script src="bower_components/momentjs/moment.js"></script>
 <script src="bower_components/angular/angular.js"></script>
-<script src="bower_components/angular-ui-calendar/src/calendar.js"></script>
+<script src="bower_components/ng-grid/ng-grid-2.0.7.min.js"></script>
 <script src="js/app.js"></script>
 <script src="js/controllers.js"></script>
+<script src="js/services.js"></script>
 <script src="js/filters.js"></script>
 <!--<!(endif)-->
 <!--(if target dist)>
