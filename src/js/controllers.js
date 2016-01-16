@@ -3,7 +3,7 @@
 angular.module('myApp.controllers', []).controller('NgGridCtrl',['$scope', 'dataService', function ($scope, dataService) {
 
     $scope.data = dataService.data;
-
+    $scope.selection = [];
     $scope.gridOptions = {
         data: 'data',
         columnDefs: [
@@ -13,6 +13,9 @@ angular.module('myApp.controllers', []).controller('NgGridCtrl',['$scope', 'data
         ],
 
         showGroupPanel: true,
-        jqueryUIDraggable: true
-    }
+        jqueryUIDraggable: true,
+        selectedItems: $scope.selection,
+        multiSelect: true,
+        enableCellEdit: true
+    };
 }]);
