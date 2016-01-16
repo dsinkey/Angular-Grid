@@ -9,3 +9,29 @@ body {
     height: 600px;
 }
 
+.detail {
+    max-width: 500px;
+    margin-left: 5px;
+}
+
+h1 {
+    margin-left: 5px;
+}
+
+p {
+    margin-left: 5px;
+}
+
+label {
+    vertical-align: middle;
+    width: 100%;
+    margin-left: 5px;
+}
+
+textarea {
+    vertical-align: middle;
+    width: 95%;
+    margin-left: 5px;
+}
+
+
